@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Moved — Jouhar Palakkal</title>
+  <meta http-equiv="refresh" content="10; url=https://foliapro.jorzier.com/" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9f8f6;
+      color: #1a1a18;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #faeeda;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      color: #1a1a18;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #5f5e5a;
+      line-height: 1.7;
+      max-width: 420px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #185fa5;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 12px 28px;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+
+    .cta-button:hover {
+      background: #0c447c;
+    }
+
+    .url-hint {
+      font-size: 0.8rem;
+      color: #888780;
+      margin-top: 0.6rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e0dfd8;
+      margin: 2rem 0;
+    }
+
+    .notice {
+      background: #f1efe8;
+      border: 0.5px solid #d3d1c7;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .notice-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #888780;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.4rem;
+    }
+
+    .notice p {
+      font-size: 0.95rem;
+      color: #1a1a18;
+      line-height: 1.7;
+    }
+
+    .countdown {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888780;
+      margin-top: 1.75rem;
+    }
+
+    #timer {
+      font-weight: 500;
+      color: #5f5e5a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="hero">
+      <div class="icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+          stroke="#BA7517" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+      </div>
+
+      <h1>This page has moved</h1>
+      <p class="subtitle">
+        Sorry for the inconvenience — this project has been relocated to a new home.
+        Please update your bookmarks and visit the link below.
+      </p>
+
+      <a class="cta-button" href="https://foliapro.jorzier.com/">Go to the new site →</a>
+      <p class="url-hint">foliapro.jorzier.com</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="notice">
+      <p class="notice-label">Coming soon</p>
+      <p>
+        <strong>jorzier.com/apps</strong> will feature all apps conceptualized,
+        developed, and vibecoded by <strong>Jouhar Palakkal</strong>.
+      </p>
+    </div>
+
+    <p class="countdown">
+      Redirecting automatically in <span id="timer">10</span> seconds&hellip;
+    </p>
+
+  </div>
+
+  <script>
+    var t = 10;
+    var el = document.getElementById('timer');
+    var iv = setInterval(function () {
+      t--;
+      el.textContent = t;
+      if (t <= 0) {
+        clearInterval(iv);
+        window.location.href = 'https://foliapro.jorzier.com/';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
