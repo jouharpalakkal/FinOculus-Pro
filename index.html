@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Moved — Jouhar Palakkal</title>
-  <meta http-equiv="refresh" content="10; url=https://foliapro.jorzier.com/" />
+  <title>We've Moved — Jouhar Palakkal</title>
+  <meta http-equiv="refresh" content="30; url=https://foliapro.jorzier.com/" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -28,7 +28,7 @@
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      background: #faeeda;
+      background: #fcebeb;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -51,7 +51,7 @@
       font-size: 1rem;
       color: #5f5e5a;
       line-height: 1.7;
-      max-width: 420px;
+      max-width: 460px;
       margin: 0 auto 2rem;
     }
 
@@ -67,9 +67,7 @@
       transition: background 0.15s;
     }
 
-    .cta-button:hover {
-      background: #0c447c;
-    }
+    .cta-button:hover { background: #0c447c; }
 
     .url-hint {
       font-size: 0.8rem;
@@ -83,27 +81,47 @@
       margin: 2rem 0;
     }
 
-    .notice {
-      background: #f1efe8;
-      border: 0.5px solid #d3d1c7;
+    .card {
       border-radius: 12px;
       padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
     }
 
-    .notice-label {
-      font-size: 0.75rem;
+    .card-warning {
+      background: #fcebeb;
+      border: 0.5px solid #f7c1c1;
+    }
+
+    .card-promise {
+      background: #eaf3de;
+      border: 0.5px solid #c0dd97;
+    }
+
+    .card-notice {
+      background: #f1efe8;
+      border: 0.5px solid #d3d1c7;
+    }
+
+    .card-label {
+      font-size: 0.72rem;
       font-weight: 500;
-      color: #888780;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       margin-bottom: 0.4rem;
     }
 
-    .notice p {
+    .label-warning { color: #a32d2d; }
+    .label-promise { color: #3b6d11; }
+    .label-notice  { color: #888780; }
+
+    .card p {
       font-size: 0.95rem;
-      color: #1a1a18;
       line-height: 1.7;
     }
+
+    .card-warning p { color: #501313; }
+    .card-promise p { color: #173404; }
+    .card-notice  p { color: #1a1a18; }
 
     .countdown {
       text-align: center;
@@ -112,10 +130,7 @@
       margin-top: 1.75rem;
     }
 
-    #timer {
-      font-weight: 500;
-      color: #5f5e5a;
-    }
+    #timer { font-weight: 500; color: #5f5e5a; }
   </style>
 </head>
 <body>
@@ -124,41 +139,59 @@
     <div class="hero">
       <div class="icon-wrap">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-          stroke="#BA7517" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-          <line x1="12" y1="9" x2="12" y2="13"/>
-          <line x1="12" y1="17" x2="12.01" y2="17"/>
+          stroke="#a32d2d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
         </svg>
       </div>
 
-      <h1>This page has moved</h1>
+      <h1>We've moved — and we owe you an apology</h1>
       <p class="subtitle">
-        Sorry for the inconvenience — this project has been relocated to a new home.
-        Please update your bookmarks and visit the link below.
+        This app has been rebuilt and relaunched at a new home.
+        Please visit the link below to continue.
       </p>
 
-      <a class="cta-button" href="https://foliapro.jorzier.com/">Go to the new site →</a>
+      <a class="cta-button" href="https://foliapro.jorzier.com/">Visit the new site →</a>
       <p class="url-hint">foliapro.jorzier.com</p>
     </div>
 
     <hr class="divider" />
 
-    <div class="notice">
-      <p class="notice-label">Coming soon</p>
+    <div class="card card-warning">
+      <p class="card-label label-warning">Data loss — we're sorry</p>
       <p>
-        <strong>jorzier.com/apps</strong> will feature all apps conceptualized,
+        During this migration, <strong>all existing data has been reset</strong>. We sincerely apologize
+        for this — we understand how frustrating it is to lose your data without warning, and
+        we take full responsibility for that.
+      </p>
+    </div>
+
+    <div class="card card-promise">
+      <p class="card-label label-promise">Our commitment to you</p>
+      <p>
+        This will not happen again. If any future change ever risks affecting your data,
+        you will receive <strong>prior notice</strong> and a clear option to
+        <strong>back up your data</strong> before anything changes. You have our word.
+      </p>
+    </div>
+
+    <div class="card card-notice">
+      <p class="card-label label-notice">Coming soon</p>
+      <p>
+        <strong>jorzier.com/apps</strong> will be the home for all apps conceptualized,
         developed, and vibecoded by <strong>Jouhar Palakkal</strong>.
       </p>
     </div>
 
     <p class="countdown">
-      Redirecting automatically in <span id="timer">10</span> seconds&hellip;
+      Redirecting automatically in <span id="timer">30</span> seconds&hellip;
     </p>
 
   </div>
 
   <script>
-    var t = 10;
+    var t = 30;
     var el = document.getElementById('timer');
     var iv = setInterval(function () {
       t--;
